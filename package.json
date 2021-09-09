@@ -1,0 +1,11 @@
+{
+  "name": "hexo-vtuber-banner",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MIMONATCH/hexo-vtuber-banner.git",
+  "author": "midou",
+  "license": "MIT",
+  "dependencies": {
+    "hexo-fs": "^3.1.0"
+  }
+}

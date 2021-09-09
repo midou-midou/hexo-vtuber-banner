@@ -1,0 +1,22 @@
+<div id="vBanner_Root">
+    <div id="vBanner_Container" style="background-image: linear-gradient(to bottom right, white ,{{ VColor }})">
+        <a href="{{Vlink}}">
+            <div id="vBanner_post" title="{{Vname}}" style="background-image:url({{ VBanner }})"></div>
+        </a>
+        <div id="vLogo_Container">
+            {% if VLogo.length > 0 %}
+                {% if 
+                    VLogo.substr(VLogo.lastIndexOf(".")+1) == 'png' or 
+                    VLogo.substr(VLogo.lastIndexOf(".")+1) == 'jpg' or 
+                    VLogo.substr(VLogo.lastIndexOf(".")+1) == 'jpeg'
+                 %}
+                   <div id="vBanner_logo"></div>     
+                {% else %}
+                    <div id="vBanner_name">Hello {{Vname}}</div>
+                {% endif %}    
+            {% else %}
+                <div id="vBanner_name">Hello {{Vname}}</div>
+            {% endif %}
+        </div>
+    </div>
+</div>

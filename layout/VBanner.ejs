@@ -1,0 +1,25 @@
+<% if(vData && hexo.config.vBanner.enable){ %>
+    <div id="vBanner_Root">
+        <div id="vBanner_Container">
+            <a href="<%- vData.Vlink %>">
+            <div id="vBanner_post" title="<%- vData.Vname %>"></div>
+            </a>
+            <div id="vLogo_Container">
+                <% if(vData.VLogo.length > 0 ) {%> 
+                    <% if(  
+                        vData.VLogo.substr(vData.VLogo.lastIndexOf(".")+1) == 'png'||
+                        vData.VLogo.substr(vData.VLogo.lastIndexOf(".")+1) == 'jpg'||
+                        vData.VLogo.substr(vData.VLogo.lastIndexOf(".")+1) == 'jpeg'        
+                    ) { %>        
+                        <div id="vBanner_logo"></div>
+                    <% }else{ %>
+                        <div id="vBanner_name">Hello <%- vData.Vname %></div>
+                    <% } %>
+                <% }else{ %>
+                    <div id="vBanner_name">Hello <%- vData.Vname %></div>
+                <% } %>
+            </div>
+        </div>
+        
+    </div>
+<% }%>

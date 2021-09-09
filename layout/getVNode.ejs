@@ -1,0 +1,13 @@
+<% if(hexo.config.vBanner.enable == true){ %>
+    var nodes = document.getElementsByTagName("header");
+    var vBannerRoot = document.getElementById("vBanner_Root");
+    
+    // no header dom
+    if(nodes.length == 0){
+        var body = document.getElementsByTagName("body")[0];
+        body.appendChild(vBanner);
+    }else{
+        nodes[0].appendChild(vBannerRoot);
+    }
+
+<% } %>
