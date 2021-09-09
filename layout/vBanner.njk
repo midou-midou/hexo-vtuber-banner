@@ -10,7 +10,7 @@
                     VLogo.substr(VLogo.lastIndexOf(".")+1) == 'jpg' or 
                     VLogo.substr(VLogo.lastIndexOf(".")+1) == 'jpeg'
                  %}
-                   <div id="vBanner_logo"></div>     
+                   <div id="vBanner_logo" style="background-image:url({{ VLogo }})"></div>     
                 {% else %}
                     <div id="vBanner_name">Hello {{Vname}}</div>
                 {% endif %}    
