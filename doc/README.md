@@ -1,42 +1,42 @@
 # hexo-vTuber-Banner
 
-添加你喜欢的vTuber/vup的卡片到你的博客
+Add a Vtuber banner or bilibili vup banner to your blog
 
 ![](https://static.xiaoblogs.cn/img/20210909151949.png)
 
-在线演示：[demo](https://mimonarchrd.gitee.io/passages/vTuber-demo/)
+Demo：[demo](https://mimonarchrd.gitee.io/passages/vTuber-demo/)
 
-[中文文档](https://github.com/MIMONATCH/hexo-vtuber-banner/blob/main/README.md) [英文文档]()
+Doc：[中文](https://github.com/MIMONATCH/hexo-vtuber-banner/blob/main/README.md) [English](https://github.com/MIMONATCH/hexo-vtuber-banner/blob/main/doc/README.md)
 
-## 安装
+## Install
 
-所需依赖
+need this dependencies
 
 - hexo-fs
 
-所需Hexo版本
+Compatibility 
 
-- 3.0以上版本
+- Hexo 3 or later
 
 
 
-安装vBanner
+install vBanner
 
 ```sh
 npm install -s hexo-vtuber-banner
 ```
 
-或
+os
 
 ```sh
 yarn add hexo-vtuber-banner
 ```
 
-## 配置
+## Configuration
 
-### _config.yml下的配置
+### _config.yml
 
-在`Hexo`的`_config.yml`中需要添加如下配置
+The following configuration needs to be added in the `_config.yml` of `Hexo`
 
 ```yaml
 vBanner:
@@ -45,37 +45,35 @@ vBanner:
   localtion: home  # vBanner will render in ['default','home','post','page','archive','category','tag'] pages
 ```
 
-配置项说明：
-
 #### enable
 
-开启让插件是否自动渲染到`localtion`配置的页面
+Turn on or Turn off automatic rendering to `localtion`
 
 #### vTuber_name
 
-填入vBanner上要显示的vtuber/vup的名字
+vup's name or vTuber name
 
 #### localtion
 
-控制插件渲染Banner的位置，一共有7个选项
+Tell vBanner where to render
 
-| 配置项options |        说明         |
-| :-----------: | :-----------------: |
-|    default    |  **全部页面**渲染   |
-|     home      | 仅**主页index**渲染 |
-|     post      | 仅**post页面**渲染  |
-|     page      | 仅**page页面**渲染  |
-|    archive    | 仅**归档页面**渲染  |
-|   category    | 仅**分类页面**渲染  |
-|      tag      | 仅**标签页面**渲染  |
+| options  |               info               |
+| :------: | :------------------------------: |
+| default  |     render to **every page**     |
+|   home   |   only render to **home page**   |
+|   post   |   only render to **post page**   |
+|   page   |     only render to **pages**     |
+| archive  | only render to **archive page**  |
+| category | only render to **category page** |
+|   tag    |   only render to **tag page**    |
 
 ------
 
 
 
-### VJson的配置
+### VJson
 
-执行`hexo g`命令后会在`hexo`的`_config.yml`同级目录生成VJson文件夹，里面有`vtuber.json`配置文件
+run `hexo g` will generate a folder named "**VJson**", and a file named "**vtuber.json**". Open this file, you'll see the following content.
 
 ```json
 [{
@@ -89,48 +87,46 @@ vBanner:
 }]
 ```
 
-配置项
+|     key     |               value                |
+| :---------: | :--------------------------------: |
+|   Vname *   |     vup's name or vTuber name      |
+|   [VLogo]   |              logo url              |
+| [VBirthday] |          birthday [mm-dd]          |
+|  VColor *   | vtuber's color [Hexadecimal color] |
+|  VBanner *  |     vtuber image or vup image      |
+|   Vlink *   |            image source            |
+|  [VSlogan]  |               slogan               |
 
-|   属性名    |      属性值       |
-| :---------: | :---------------: |
-|   Vname *   | vtuber或vup的名字 |
-|   [VLogo]   |   logo图片的url   |
-| [VBirthday] |   生日 [xx-xx]    |
-|  VColor *   |  映像色 [16进制]  |
-|  VBanner *  |    人物图片url    |
-|   Vlink *   |    图片来源url    |
-|  [VSlogan]  |       标语        |
+"*" is required，"[]" is optional
 
-*为必填，[]可选
+**Attention**
 
-**说明**
+- Image ratio is 4:1 for better page effect
+- You could put your images into `bannerImg` folder. These Images' url is `http://your_site_url/bannerImg/your_image_file`
+- Image format：png、jpg、jpeg
+- The images must be directly accessible
+- It is recommended that the picture be put into OSS or CDN
 
-- 为了有更好的显示效果。VLogo图片、VBanner图片比例最好为4:1的比例，即 宽:高
-- 图片可以放到VJson文件夹下的bannerImg文件夹下，本地图片url为`http://your_site_url/bannerImg/your_image_file`
-- 图片的格式：png、jpg、jpeg
-- 图片的链接必须可以直接访问到
-- 建议图片放入OSS
+## Usage
 
-## 使用
-
-除了在各种页面上的自动渲染，vBanner还可以在markdown里面使用
+Using nunjucks tags in your markdown file
 
 ```markdown
-{%vBanner [填入vTuber/vup的名字] %}
+{%vBanner [vup's name or vTuber name] %}
 ```
 
-**说明**
+**Attention**
 
-必须使用`json`中配置的vTuber/vup的名字
+vup's name or vTuber name must be in `vtuber.json`
 
-## 最后
+## Final
 
-需要反馈请到issue区
+If you have some problem, you'll can tell me in issue
 
-各位帅老DD们，觉得不错给个:100:吧
+Ladies and gentlemen，Enjoy :beer:
 
 ![](https://static.xiaoblogs.cn/emoji/%E5%B0%8F%E5%B8%8C%E5%B0%8F%E6%A1%83_%E8%BF%99%E6%A0%B7%E9%82%A3%E6%A0%B7.png)
 
-## 许可证
+## License
 
 MIT License

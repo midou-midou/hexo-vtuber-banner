@@ -6,7 +6,7 @@
 
 在线演示：[demo](https://mimonarchrd.gitee.io/passages/vTuber-demo/)
 
-[中文文档](https://github.com/MIMONATCH/hexo-vtuber-banner/blob/main/README.md) [英文文档]()
+文档：[中文](https://github.com/MIMONATCH/hexo-vtuber-banner/blob/main/README.md) [English](https://github.com/MIMONATCH/hexo-vtuber-banner/blob/main/doc/README.md)
 
 ## 安装
 
