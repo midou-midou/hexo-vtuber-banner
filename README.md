@@ -8,6 +8,10 @@
 
 文档：[中文](https://github.com/MIMONATCH/hexo-vtuber-banner/blob/main/README.md) [English](https://github.com/MIMONATCH/hexo-vtuber-banner/blob/main/doc/README.md)
 
+## 目录
+
+[TOC]
+
 ## 安装
 
 所需依赖
