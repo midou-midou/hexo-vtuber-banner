@@ -13,6 +13,7 @@ Doc：[中文](https://github.com/MIMONATCH/hexo-vtuber-banner/blob/main/README.
 need this dependencies
 
 - hexo-fs
+- uglify-js
 
 Compatibility 
 

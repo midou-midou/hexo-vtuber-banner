@@ -15,6 +15,7 @@
 所需依赖
 
 - hexo-fs
+- uglify-js
 
 所需Hexo版本
 
