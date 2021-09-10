@@ -3,3 +3,4 @@ lib/getVNode.min.js
 lib/getVNode.js
 source/VBanner.css
 .gitignore
+package-lock.json
