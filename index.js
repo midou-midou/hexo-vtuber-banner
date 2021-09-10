@@ -28,16 +28,16 @@ hexo.render.render({path: path.resolve(__dirname, './source/vBannerCss.ejs')}, {
 // 插入css标签
 hexo.extend.injector.register('head_end', () => css('css/vBanner.css'));
 // 插入js标签
-hexo.extend.injector.register('body_end', () => js('lib/vBanner/getVNode.min.js'));
+hexo.extend.injector.register('body_end', () => js('lib/vBanner/getVNode.js'));
 
 // 添加过滤器 - 复制文件 copy asset files
 hexo.extend.filter.register('before_generate', function(){
     hexo.extend.generator.register('vBanner_asset', ()=>[
         {
-          path: 'lib/vBanner/getVNode.min.js',
+          path: 'lib/vBanner/getVNode.js',
           data: function(){
             return fs.createReadStream(
-              path.resolve(path.resolve(__dirname, "./lib"),"getVNode.min.js"))
+              path.resolve(path.resolve(__dirname, "./lib"),"getVNode.js"))
           }
         },
         {
@@ -62,21 +62,4 @@ hexo.extend.filter.register('before_generate', function(){
 // 注册vBanner tag 
 // register vBanner tag
 hexo.extend.tag.register('vBanner', (arg) => createVBannerByTag(arg, hexo));
-// minifier
-hexo.extend.filter.register('after_render:js', function(){
-    let res = UglifyJS.minify(path.resolve(path.resolve(__dirname, "./lib"),"getVNode.js"), {
-            mangle: true,
-            compress: {
-                sequences: true,
-                dead_code: true,
-                conditionals: true,
-                booleans: true,
-                unused: true,
-                if_return: true,
-                join_vars: true,
-                drop_console: true
-            }
-        } 
-    );
-    fs.writeFileSync(path.resolve(__dirname, './lib/getVNode.min.js'), res.code);
-});
+
