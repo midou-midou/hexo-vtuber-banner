@@ -109,10 +109,16 @@ vup's name or vTuber name must be in `vtuber.json`
 
 ### Hexo Helper
 
-in ejs
+In ejs
 
 ```ejs
 <%- vBanner() %>
+```
+
+In njk (next theme v8.0)
+
+```
+{{ vBanner() }}
 ```
 
 Add this code to your themes. For example, If I want to add vBanner to `header`, I could write this code in my theme of ejs file

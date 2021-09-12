@@ -125,6 +125,12 @@ vBanner一共提供了两种使用的方法
 <%- vBanner() %>
 ```
 
+- njk模板中 (next主题v8.0及以上)
+
+```njk
+{{ vBanner() }}
+```
+
 将上面的代码放到你要添加vBanner的地方，比如要在`header`中添加，就到`header`的模板中添加上面的代码
 
 ## 最后
