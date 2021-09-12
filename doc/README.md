@@ -42,7 +42,6 @@ The following configuration needs to be added in the `_config.yml` of `Hexo`
 vBanner:
   enable: true	# true or false
   vTuber_name: Kizuna AI  # vTuber's name or vup's name
-  localtion: home  # vBanner will render in ['default','home','post','page','archive','category','tag'] pages
 ```
 
 #### enable
@@ -52,24 +51,6 @@ Turn on or Turn off automatic rendering to `localtion`
 #### vTuber_name
 
 vup's name or vTuber name
-
-#### localtion
-
-Tell vBanner where to render
-
-| options  |               info               |
-| :------: | :------------------------------: |
-| default  |     render to **every page**     |
-|   home   |   only render to **home page**   |
-|   post   |   only render to **post page**   |
-|   page   |     only render to **pages**     |
-| archive  | only render to **archive page**  |
-| category | only render to **category page** |
-|   tag    |   only render to **tag page**    |
-
-------
-
-
 
 ### VJson
 
@@ -109,6 +90,13 @@ run `hexo g` will generate a folder named "**VJson**", and a file named "**vtube
 
 ## Usage
 
+There is two ways to use vBanner in your blog
+
+- nunjucks tag
+- helper
+
+### Nunjuck tag
+
 Using nunjucks tags in your markdown file
 
 ```markdown
@@ -118,6 +106,16 @@ Using nunjucks tags in your markdown file
 **Attention**
 
 vup's name or vTuber name must be in `vtuber.json`
+
+### Hexo Helper
+
+in ejs
+
+```ejs
+<%- vBanner() %>
+```
+
+Add this code to your themes. For example, If I want to add vBanner to `header`, I could write this code in my theme of ejs file
 
 ## Final
 

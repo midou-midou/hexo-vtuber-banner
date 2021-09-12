@@ -44,7 +44,6 @@ yarn add hexo-vtuber-banner
 vBanner:
   enable: true	# true or false
   vTuber_name: Kizuna AI  # vTuber's name or vup's name
-  localtion: home  # vBanner will render in ['default','home','post','page','archive','category','tag'] pages
 ```
 
 配置项说明：
@@ -57,19 +56,7 @@ vBanner:
 
 填入vBanner上要显示的vtuber/vup的名字
 
-#### localtion
-
-控制插件渲染Banner的位置，一共有7个选项
-
-| 配置项options |        说明         |
-| :-----------: | :-----------------: |
-|    default    |  **全部页面**渲染   |
-|     home      | 仅**主页index**渲染 |
-|     post      | 仅**post页面**渲染  |
-|     page      | 仅**page页面**渲染  |
-|    archive    | 仅**归档页面**渲染  |
-|   category    | 仅**分类页面**渲染  |
-|      tag      | 仅**标签页面**渲染  |
+#### 
 
 ------
 
@@ -115,7 +102,12 @@ vBanner:
 
 ## 使用
 
-除了在各种页面上的自动渲染，vBanner还可以在markdown里面使用
+vBanner一共提供了两种使用的方法
+
+- markdown中使用tag
+- 通过辅助函数引入vBanner
+
+### Markdown中书写
 
 ```markdown
 {%vBanner [填入vTuber/vup的名字] %}
@@ -124,6 +116,16 @@ vBanner:
 **说明**
 
 必须使用`json`中配置的vTuber/vup的名字
+
+### 在theme中手动引入
+
+- ejs模板中
+
+```ejs
+<%- vBanner() %>
+```
+
+将上面的代码放到你要添加vBanner的地方，比如要在`header`中添加，就到`header`的模板中添加上面的代码
 
 ## 最后
 
