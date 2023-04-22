@@ -49,7 +49,7 @@ vBanner:
 
 #### enable
 
-开启让插件是否自动渲染到`localtion`配置的页面
+是否开启
 
 #### 
 
