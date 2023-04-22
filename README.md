@@ -4,7 +4,7 @@
 
 ![](https://static.xiaoblogs.cn/img/20210909151949.png)
 
-~~在线演示：[demo](https://mimonarchrd.gitee.io/passages/vTuber-demo/)~~
+在线演示：[demo](https://mimonarchrd.gitee.io/passages/vTuber-demo/)
 
 文档：[中文](https://github.com/MIMONATCH/hexo-vtuber-banner/blob/main/README.md) [English](https://github.com/MIMONATCH/hexo-vtuber-banner/blob/main/doc/README.md)
 
