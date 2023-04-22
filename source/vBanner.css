@@ -11,7 +11,7 @@ div#vBanner_Container{
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     box-shadow: 1px 1px 4px rgb(18 18 18 / 45%);
-    background-image: linear-gradient(to bottom right, white , <%- vData.VColor %> );
+    background-image: linear-gradient(to bottom right, white , #EE4F87 );
 }
 
 #vBanner_post{
@@ -20,7 +20,7 @@ div#vBanner_Container{
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     box-sizing: border-box;
-    background-image: url('<%- vData.VBanner %>');
+    background-image: url('/path/to/yourBanner');
     background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,7 +41,7 @@ div#vBanner_Container{
 #vBanner_logo{
     width: calc(40%);
     height: 0.4em;
-    background-image: url('<%- vData.VLogo %>');
+    background-image: url('/path/to/yourBanner');
     background-position: center;
     background-size: auto 100%;
     background-repeat: no-repeat;

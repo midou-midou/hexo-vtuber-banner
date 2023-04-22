@@ -41,16 +41,11 @@ The following configuration needs to be added in the `_config.yml` of `Hexo`
 ```yaml
 vBanner:
   enable: true	# true or false
-  vTuber_name: Kizuna AI  # vTuber's name or vup's name
 ```
 
 #### enable
 
 Turn on or Turn off automatic rendering to `localtion`
-
-#### vTuber_name
-
-vup's name or vTuber name
 
 ### VJson
 
@@ -112,7 +107,7 @@ vup's name or vTuber name must be in `vtuber.json`
 In ejs
 
 ```ejs
-<%- vBanner() %>
+<%- vBanner('vtuber's name') %>
 ```
 
 In njk (next theme v8.0)

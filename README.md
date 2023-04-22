@@ -43,7 +43,6 @@ yarn add hexo-vtuber-banner
 ```yaml
 vBanner:
   enable: true	# true or false
-  vTuber_name: Kizuna AI  # vTuber's name or vup's name
 ```
 
 配置项说明：
@@ -94,7 +93,7 @@ vBanner:
 
 **说明**
 
-- 为了有更好的显示效果。VLogo图片、VBanner图片比例最好为4:1的比例，即 宽:高
+- 为了有更好的显示效果。VLogo图片、VBanner图片比例最好为16：9的比例，即 宽:高
 - 图片可以放到VJson文件夹下的bannerImg文件夹下，本地图片url为`http://your_site_url/bannerImg/your_image_file`
 - 图片的格式：png、jpg、jpeg
 - 图片的链接必须可以直接访问到
@@ -122,7 +121,7 @@ vBanner一共提供了两种使用的方法
 - ejs模板中
 
 ```ejs
-<%- vBanner() %>
+<%- vBanner('vtuber/vup 的名字') %>
 ```
 
 - njk模板中 (next主题v8.0及以上)
