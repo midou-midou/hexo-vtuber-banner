@@ -2,11 +2,11 @@
 
 添加你喜欢的vTuber/vup的卡片到你的博客
 
-![](https://static.xiaoblogs.cn/img/20210909151949.png)
+![](https://midou-static-1257227807.cos.ap-chengdu.myqcloud.com/img/20210909151949.png)
 
 在线演示：[demo](https://mimonarchrd.gitee.io/passages/vTuber-demo/)
 
-文档：[中文](https://github.com/MIMONATCH/hexo-vtuber-banner/blob/main/README.md) [English](https://github.com/MIMONATCH/hexo-vtuber-banner/blob/main/doc/README.md)
+文档：[中文](https://github.com/MIMONATCH/hexo-vtuber-banner/blob/main/README.md)
 
 
 
@@ -128,13 +128,18 @@ vBanner一共提供了两种使用的方法
 
 将上面的代码放到你要添加vBanner的地方，比如要在`header`中添加，就到`header`的模板中添加上面的代码
 
+之后执行下面的命令
+```shell
+  hexo clean && hexo g && hexo s
+  ```
+
+之后在浏览器中就可以看到效果了
+
 ## 最后
 
 需要反馈请到issue区
 
 各位帅老DD们，觉得不错给个:100:吧
-
-![](https://static.xiaoblogs.cn/emoji/%E5%B0%8F%E5%B8%8C%E5%B0%8F%E6%A1%83_%E8%BF%99%E6%A0%B7%E9%82%A3%E6%A0%B7.png)
 
 ## 许可证
 

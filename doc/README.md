@@ -2,7 +2,7 @@
 
 Add a Vtuber banner or bilibili vup banner to your blog
 
-![](https://static.xiaoblogs.cn/img/20210909151949.png)
+![](https://midou-static-1257227807.cos.ap-chengdu.myqcloud.com/img/20210909151949.png)
 
 Demo：[demo](https://mimonarchrd.gitee.io/passages/vTuber-demo/)
 
@@ -123,8 +123,6 @@ Add this code to your themes. For example, If I want to add vBanner to `header`,
 If you have some problem, you'll can tell me in issue
 
 Ladies and gentlemen，Enjoy :beer:
-
-![](https://static.xiaoblogs.cn/emoji/%E5%B0%8F%E5%B8%8C%E5%B0%8F%E6%A1%83_%E8%BF%99%E6%A0%B7%E9%82%A3%E6%A0%B7.png)
 
 ## License
 
