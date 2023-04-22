@@ -90,10 +90,8 @@ vBanner:
 **说明**
 
 - 为了有更好的显示效果。VLogo图片、VBanner图片比例最好为16：9的比例，即 宽:高
-- 图片可以放到VJson文件夹下的bannerImg文件夹下，本地图片url为`http://your_site_url/bannerImg/your_image_file`
-- 图片的格式：png、jpg、jpeg
-- 图片的链接必须可以直接访问到
-- 建议图片放入OSS
+- 图片的格式：png、jpg、jpeg、webp  url()支持的都可以
+- 建议图片放入图床
 
 ## 使用
 
