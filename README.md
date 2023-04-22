@@ -4,7 +4,7 @@
 
 ![](https://static.xiaoblogs.cn/img/20210909151949.png)
 
-在线演示：[demo](https://mimonarchrd.gitee.io/passages/vTuber-demo/)
+~~在线演示：[demo](https://mimonarchrd.gitee.io/passages/vTuber-demo/)~~
 
 文档：[中文](https://github.com/MIMONATCH/hexo-vtuber-banner/blob/main/README.md) [English](https://github.com/MIMONATCH/hexo-vtuber-banner/blob/main/doc/README.md)
 
@@ -50,10 +50,6 @@ vBanner:
 #### enable
 
 开启让插件是否自动渲染到`localtion`配置的页面
-
-#### vTuber_name
-
-填入vBanner上要显示的vtuber/vup的名字
 
 #### 
 
@@ -127,7 +123,7 @@ vBanner一共提供了两种使用的方法
 - njk模板中 (next主题v8.0及以上)
 
 ```njk
-{{ vBanner() }}
+{{ vBanner('vtuber/vup 的名字') }}
 ```
 
 将上面的代码放到你要添加vBanner的地方，比如要在`header`中添加，就到`header`的模板中添加上面的代码

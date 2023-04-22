@@ -113,7 +113,7 @@ In ejs
 In njk (next theme v8.0)
 
 ```
-{{ vBanner() }}
+{{ vBanner('vtuber's name') }}
 ```
 
 Add this code to your themes. For example, If I want to add vBanner to `header`, I could write this code in my theme of ejs file
