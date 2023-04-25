@@ -2,8 +2,6 @@
 
 添加你喜欢的vTuber/vup的卡片到你的博客
 
-![](https://midou-static-1257227807.cos.ap-chengdu.myqcloud.com/img/20210909151949.png)
-
 在线演示：[demo](https://mimonarchrd.gitee.io/passages/vTuber-demo/)
 
 文档：[中文](https://github.com/MIMONATCH/hexo-vtuber-banner/blob/main/README.md)
